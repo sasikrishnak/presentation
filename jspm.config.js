@@ -22,6 +22,10 @@ SystemJS.config({
         }
       }
     }
+  },
+  map: {
+    "jstar": "github:cpmech/jstar@master",
+    "reveal": "github:hakimel/reveal.js@3.3.0"
   }
 });
 
@@ -32,8 +36,8 @@ SystemJS.config({
     "github:*/*.json"
   ],
   map: {
-    "jstar": "github:cpmech/jstar@master",
-    "reveal": "github:hakimel/reveal.js@3.3.0"
+    "cpmech/jstar": "github:cpmech/jstar@master",
+    "hakimel/reveal.js": "github:hakimel/reveal.js@3.3.0"
   },
   packages: {}
 });
