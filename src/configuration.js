@@ -9,22 +9,26 @@ import Reveal from 'reveal/js/reveal.js';
 // import plugins
 import 'reveal/plugin/math/math.js';
 import 'reveal/plugin/zoom-js/zoom.js';
-import './js/highlight.js';
+import './highlight.reveal.js';
+import './highlight.pack.js';
 
-// configure revealJS---YOU MAY CHANGE HERE
+
+// YOU MAY CHANGE HERE ---------------------------------------------------------
+
+// configure revealJS
 Reveal.initialize({
     history: true,
     transition: 'linear',
     math: {
         config: 'TeX-AMS_HTML-full'
     },
+    slideNumber: 'c/t'
 });
 
-// import extra presentation content
-import './presentation.js';
+// END OF CHANGES --------------------------------------------------------------
+
 
 // pretty-print all code
-import 'js/highlight.pack.js';
 let codes = document.querySelectorAll('pre code');
 for (let i = 0; i < codes.length; i++) {
     hljs.highlightBlock(codes[i]);

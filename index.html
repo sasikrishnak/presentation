@@ -8,24 +8,26 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<script src="jspm_packages/system.js"></script>
+<script src="jspm.config.js"></script>
+
 <link rel="stylesheet" href="css/reveal.css">
 
 <!-- CHOOSE THEME HERE -->
 <link rel="stylesheet" href="css/theme/mine.css" id="theme">
 <link rel="stylesheet" href="css/highlight.color-brewer.css">
-
-<script src="jspm_packages/system.js"></script>
-<script src="jspm.config.js"></script>
 </head>
 
 <body>
 
 <div class="reveal">
 <div class="slides">
-<!-- CHANGE HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- PRESENTATION STARTS HERE =========================================================== -->
 
 
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <section>
 <h2>Presentation Title</h2>
 <p>The Author</p>
@@ -33,13 +35,15 @@
 
 
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <section>
 <h3>Graph</h3>
-<canvas id="canvas-1"></canvas>
+<canvas class="stretch" id="canvas-1"></canvas>
 </section>
 
 
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <section>
 <h3>Equations</h3>
 \[
@@ -53,6 +57,7 @@
 
 
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <section>
 <h3>Code</h3>
 <pre><code data-trim data-noescape>
@@ -68,27 +73,13 @@ func main() {
 
 
 
-<section>
-<h3>Code</h3>
-<pre><code data-trim data-noescape>
-package main
+<!-- END OF PRESENTATION ================================================================ -->
 
-import "github.com/cpmech/gosl/io"
-
-func main() {
-	io.Pf("Hello World!")
-}
-</code></pre>
-</section>
-
-
-
-<!-- END OF CHANGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 </div>
 </div>
 
 <script>
-SystemJS.import('configuration.js');
+SystemJS.import('src/main.js');
 </script>
 
 </body>
