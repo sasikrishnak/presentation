@@ -2,50 +2,93 @@
 <html lang="en">
 
 <head>
-    <title>Cpmech Presentation Template</title>
+<title>Cpmech Presentation Template</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/mine.css" id="theme">
+<link rel="stylesheet" href="css/reveal.css">
 
-    <script src="jspm_packages/system.js"></script>
-    <script src="jspm.config.js"></script>
+<!-- CHOOSE THEME HERE -->
+<link rel="stylesheet" href="css/theme/mine.css" id="theme">
+<link rel="stylesheet" href="css/highlight.color-brewer.css">
+
+<script src="jspm_packages/system.js"></script>
+<script src="jspm.config.js"></script>
 </head>
 
 <body>
 
 <div class="reveal">
 <div class="slides">
+<!-- CHANGE HERE ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
 
 <section>
-    <h2>Presentation Title</h2>
-    <p>The Author</p>
+<h2>Presentation Title</h2>
+<p>The Author</p>
 </section>
+
+
 
 <section>
-    <h3>Graph</h3>
-    <canvas id="canvas-1" width=800 height=500></canvas>
+<h3>Graph</h3>
+<canvas id="canvas-1"></canvas>
 </section>
+
+
 
 <section>
-    <h3>Equations</h3>
-    \[
-        \begin{aligned}
-        \dot{x} &amp; = \sigma(y-x) \\
-        \dot{y} &amp; = \rho x - y - xz \\
-        \dot{z} &amp; = -\beta z + xy
-        \end{aligned}
-    \]
+<h3>Equations</h3>
+\[
+    \begin{aligned}
+    \dot{x} &amp; = \sigma(y-x) \\
+    \dot{y} &amp; = \rho x - y - xz \\
+    \dot{z} &amp; = -\beta z + xy
+    \end{aligned}
+\]
 </section>
 
+
+
+<section>
+<h3>Code</h3>
+<pre><code data-trim data-noescape>
+package main
+
+import "github.com/cpmech/gosl/io"
+
+func main() {
+	io.Pf("Hello World!")
+}
+</code></pre>
+</section>
+
+
+
+<section>
+<h3>Code</h3>
+<pre><code data-trim data-noescape>
+package main
+
+import "github.com/cpmech/gosl/io"
+
+func main() {
+	io.Pf("Hello World!")
+}
+</code></pre>
+</section>
+
+
+
+<!-- END OF CHANGES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 </div>
 </div>
 
 <script>
-    SystemJS.import('index.js');
+SystemJS.import('configuration.js');
 </script>
 
 </body>

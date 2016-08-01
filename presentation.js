@@ -2,19 +2,6 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-import 'reveal/lib/js/head.min.js';
-import Reveal from 'reveal/js/reveal.js';
-import 'reveal/lib/js/classList.js';
-import 'reveal/plugin/math/math.js';
-
-Reveal.initialize({
-    history: true,
-    transition: 'linear',
-    math: {
-        config: 'TeX-AMS_HTML-full'
-    },
-});
-
 import Plotxy from 'jstar/src/canvas.plotxy.js';
 
 let p1 = new Plotxy('canvas-1', 'first plot', 'x', 'y');
