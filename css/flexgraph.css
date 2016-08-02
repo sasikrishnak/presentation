@@ -1,0 +1,44 @@
+.graph-row {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.one-col-wide {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.two-col-left {
+    float: left;
+    width: 50%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.two-col-right {
+    float: right;
+    width: 50%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.graph {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.subgraph {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    display: block;
+}

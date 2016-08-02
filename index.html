@@ -12,6 +12,7 @@
 <script src="jspm.config.js"></script>
 
 <link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/flexgraph.css">
 
 <!-- CHOOSE THEME HERE -->
 <link rel="stylesheet" href="css/theme/mine.css" id="theme">
@@ -37,8 +38,25 @@
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <section>
-<h3>Graph</h3>
-<canvas class="stretch" id="canvas-1"></canvas>
+<h3>1 Graph</h3>
+<div class="one-col-wide">
+    <canvas class="graph" id="canvas-1" width=400 height=300>
+</div>
+</section>
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section>
+<h3>2 Graphs</h3>
+<div>
+    <div class="two-col-left">
+        <canvas class="subgraph" id="canvas-2" width=400 height=300></canvas>
+    </div>
+    <div class="two-col-right">
+        <canvas class="subgraph" id="canvas-3" width=400 height=300></canvas>
+    </div>
+</div>
 </section>
 
 

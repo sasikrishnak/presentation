@@ -22,7 +22,7 @@ Reveal.initialize({
     math: {
         config: 'TeX-AMS_HTML-full'
     },
-    slideNumber: 'c/t'
+    slideNumber: 'c/t',
 });
 
 // END OF CHANGES --------------------------------------------------------------
@@ -33,3 +33,8 @@ let codes = document.querySelectorAll('pre code');
 for (let i = 0; i < codes.length; i++) {
     hljs.highlightBlock(codes[i]);
 }
+
+    /*
+    minScale: 1.0,
+    maxScale: 1.0
+    */
