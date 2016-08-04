@@ -14,5 +14,8 @@
     "serve": "browser-sync start --files '*.html,*.js,css/**/*.css,src/**/*.js,js/**/*.js,jspm_packages/github/cpmech/jstar@master/src/*.js' --server --browser= 'google-chrome'",
     "prodMode": "jspm bundle startup --inject",
     "devMode": "jspm unbundle"
+  },
+  "devDependencies": {
+    "jspm": "^0.17.0-beta.25"
   }
 }
